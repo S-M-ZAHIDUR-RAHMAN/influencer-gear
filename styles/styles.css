@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #787885;
+    --third-color: #0A0826;
+    --fourth-color: #E02C6D;
+    --font-size: 16px;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header related styles */
+.banner {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+    height: 475px;
+}
+
+.nav-container {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 87px 120px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav>ul>li {
+    margin-right: 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 87px 120px;
+}
+
+.banner-container {
+    width: 582px;
+}
+
+.banner-title {
+    color: var(--primary-color);
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.btn-primary {
+    color: white;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 41px;
+    background-color: var(--fourth-color);
+    border: none;
+    margin-top: 16px;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.banner-image-container {
+    display: flex;
+    align-items: center;
+
+}
+
+/* main section styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-top: 100px;
+}
+
+/* first section styles */
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 165px;
+    height: 108px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* second section styles */
+.second-section{
+    max-resolution: 0 197px;
+}
+.second-title {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.nineth {
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+.fourth {
+    grid-area: fourth;
+}
+
+.fifth {
+    grid-area: fifth;
+}
+
+.sixth {
+    grid-area: sixth;
+}
+
+.seventh {
+    grid-area: seventh;
+}
+
+.eighth {
+    grid-area: eighth;
+}
+
+.nineth {
+    grid-area: nineth;
+}
+
+.second-image-container {
+    display: grid;
+    gap: 30px;
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "first   second  third"
+        "fourth  fifth   sixth"
+        "seventh eighth   nineth"
+    ;
+}
